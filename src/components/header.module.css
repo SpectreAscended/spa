@@ -1,0 +1,24 @@
+.header {
+  background: #f7a833;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 168, 51, 1) 0%,
+    rgba(247, 168, 51, 1) 44%,
+    rgba(247, 168, 51, 0.9108018207282913) 72%,
+    rgba(14, 109, 171, 0) 100%
+  );
+
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header figure {
+  max-width: 8rem;
+}

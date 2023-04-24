@@ -1,0 +1,12 @@
+.services {
+  margin: 5rem auto;
+  max-width: 20rem;
+}
+
+.services h2 {
+  margin-bottom: 2rem;
+}
+
+.services li {
+  margin-bottom: 1rem;
+}
