@@ -2,7 +2,7 @@ import styles from './services.module.css';
 
 const Services = () => {
   return (
-    <article className={styles.services}>
+    <section className={styles.services}>
       <h2>Services</h2>
       <ul>
         <li>Rejuvenate Body & Mind</li>
@@ -11,7 +11,7 @@ const Services = () => {
         <li>Receipt can be provided</li>
         <li>Professional, clean, friendly & welcoming environment</li>
       </ul>
-    </article>
+    </section>
   );
 };
 
