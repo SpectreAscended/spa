@@ -1,0 +1,18 @@
+.cta {
+  max-width: 20rem;
+  margin-inline: auto;
+}
+
+.cta h2 {
+  margin-bottom: 3rem;
+}
+
+.cta p {
+  margin-bottom: 1rem;
+}
+
+.cta h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-block: 3rem;
+}

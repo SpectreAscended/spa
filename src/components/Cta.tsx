@@ -9,9 +9,8 @@ const Cta: React.FC = () => {
       </p>
       <h3>Open every day 10am to 9pm</h3>
       <p>Appointment Only, No walk-ins please</p>
-      <h2>Location</h2>
-      <p>611, 3rd Ave. N.</p>
-      <p>Saskatoon, SK</p>
+      <h2 style={{ marginTop: '3rem' }}>Location</h2>
+      <p>611, 3rd Ave. N. Saskatoon, SK</p>
     </section>
   );
 };
