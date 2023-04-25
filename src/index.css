@@ -34,11 +34,17 @@ img {
 }
 
 h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Paprika', sans-serif;
   color: var(--color-secondary);
-  font-size: 3rem;
   font-weight: 400;
-  text-align: center;
 }
 
 ul {
