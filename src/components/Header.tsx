@@ -1,6 +1,6 @@
 import styles from './header.module.css';
 import logoImg from '../assets/logo copy.png';
-import Hamburger from './UI/Hamburger';
+import MenuIcon from './UI/MenuIcon';
 
 const Header: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <figure className={styles.logo}>
         <img src={logoImg} alt="Asina Sunshine Health Spa Logo" />
       </figure>
-      <Hamburger />
+      <MenuIcon />
     </header>
   );
 };

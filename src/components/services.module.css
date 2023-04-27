@@ -7,8 +7,11 @@
   margin-bottom: 2rem;
 }
 
-.services li {
-  margin-bottom: 1rem;
+.services ul {
   margin-inline: auto;
   max-width: 15rem;
+}
+
+.services li {
+  margin-bottom: 1rem;
 }

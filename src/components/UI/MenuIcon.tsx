@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import styles from './hamburger.module.css';
+import styles from './menuIcon.module.css';
 
-const Hamburger: React.FC = () => {
+const MenuIcon: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -22,4 +22,4 @@ const Hamburger: React.FC = () => {
   );
 };
 
-export default Hamburger;
+export default MenuIcon;
