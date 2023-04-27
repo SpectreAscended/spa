@@ -9,4 +9,6 @@
 
 .services li {
   margin-bottom: 1rem;
+  margin-inline: auto;
+  max-width: 15rem;
 }

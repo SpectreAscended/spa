@@ -11,8 +11,13 @@
   margin-bottom: 1rem;
 }
 
+.heading-secondary {
+  margin-top: 3rem;
+}
+
 .cta h3 {
   font-size: 1.8rem;
   font-weight: 700;
   margin-block: 3rem;
+  text-align: center;
 }
