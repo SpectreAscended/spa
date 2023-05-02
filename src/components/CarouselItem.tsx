@@ -7,9 +7,9 @@ interface CarouselItemProps {
 
 const CarouselItem: React.FC<CarouselItemProps> = ({ image, description }) => {
   return (
-    <div className={styles['carousel-item']}>
+    <figure className={styles['carousel-item']}>
       <img src={image} alt={description} />
-    </div>
+    </figure>
   );
 };
 
