@@ -41,13 +41,12 @@
   right: 1rem;
 }
 
-.images {
+.image {
   max-width: 100%;
+  /* object-fit: cover; */
 }
 
 .images img {
   display: inline-block;
-  object-fit: contain;
-  height: 130%;
-  width: 100%;
+  object-fit: cover;
 }
