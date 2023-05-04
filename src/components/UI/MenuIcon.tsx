@@ -1,16 +1,22 @@
-import { useState } from 'react';
 import styles from './menuIcon.module.css';
 
-const MenuIcon: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+interface MenuIcon {
+  onOpenMenu: () => void;
+  onCloseMenu: () => void;
+  menuOpen: boolean;
+}
+
+const MenuIcon: React.FC<MenuIcon> = ({
+  onOpenMenu,
+  onCloseMenu,
+  menuOpen,
+}) => {
+  const menuHandler = () => {
+    menuOpen ? onCloseMenu() : onOpenMenu();
+  };
 
   return (
-    <button
-      className={styles.hamburger}
-      onClick={() => {
-        setMenuOpen(open => !open);
-      }}
-    >
+    <button className={styles.hamburger} onClick={menuHandler}>
       <div className={`${styles.top} ${menuOpen ? styles.active : ''}`}></div>
       <div
         className={`${styles.center} ${menuOpen ? styles.active : ''}`}

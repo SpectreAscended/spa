@@ -10,25 +10,57 @@
 
   height: 12rem;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 1rem;
+
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+  transition: height 250ms ease-in-out;
+}
+
+.header--active {
+  height: 130vh;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
 }
 
 .header figure {
   max-width: 8rem;
 }
 
+.nav--mobile {
+  width: min-content;
+  margin: 0 auto;
+}
+
+.nav--mobile ul {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .nav-link {
-  color: currentColor;
+  color: var(--color-secondary);
+  display: block;
   cursor: pointer;
   transition: color 250ms ease-in-out;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 350ms ease-in-out;
+  letter-spacing: 5px;
 }
 
 .nav-link:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-secondary-light);
+}
+
+.header--active .nav-link {
+  transition: opacity 250ms ease-in-out;
+
+  opacity: 1;
 }
