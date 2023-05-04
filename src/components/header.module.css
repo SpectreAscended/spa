@@ -30,6 +30,7 @@
 
 .header figure {
   max-width: 8rem;
+  cursor: pointer;
 }
 
 .nav--mobile {

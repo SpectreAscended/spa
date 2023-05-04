@@ -2,10 +2,13 @@ import { useState } from 'react';
 import logoImg from '../assets/logo copy.png';
 import MenuIcon from './UI/MenuIcon';
 import { Link } from 'react-scroll';
+import * as Scroll from 'react-scroll';
 import styles from './header.module.css';
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const scroll = Scroll.animateScroll;
 
   const openMenu = () => {
     setMenuOpen(true);
@@ -22,9 +25,16 @@ const Header: React.FC = () => {
   return (
     <header className={headerClasses}>
       <div className={styles['header-wrapper']}>
-        <figure className={styles.logo}>
+        <figure
+          className={styles.logo}
+          onClick={() => {
+            scroll.scrollToTop();
+            closeMenu();
+          }}
+        >
           <img src={logoImg} alt="Asina Sunshine Health Spa Logo" />
         </figure>
+
         <MenuIcon
           onOpenMenu={openMenu}
           onCloseMenu={closeMenu}
