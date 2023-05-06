@@ -9,7 +9,9 @@ const Cta: React.FC = () => {
         <p>
           Text or call <a href="tel:6395250611">639-525-0611</a>
         </p>
-        <h3>Open every day 10am to 9pm</h3>
+        <Element name="hours">
+          <h3>Open every day 10am to 9pm</h3>
+        </Element>
         <p>Appointment Only, No walk-ins please</p>
       </Element>
       <Element name="location">

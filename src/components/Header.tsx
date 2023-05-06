@@ -42,7 +42,7 @@ const Header: React.FC = () => {
         />
       </div>
       {menuOpen && (
-        <nav className={styles['nav--mobile']}>
+        <nav className={styles['nav-mobile']}>
           <ul>
             <li>
               <Link
@@ -64,6 +64,17 @@ const Header: React.FC = () => {
                 onClick={closeMenu}
               >
                 Book
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="hours"
+                className={styles['nav-link']}
+                smooth="true"
+                offset={-175}
+                onClick={closeMenu}
+              >
+                Hours
               </Link>
             </li>
             <li>
