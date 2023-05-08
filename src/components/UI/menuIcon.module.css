@@ -48,3 +48,9 @@
 .bottom.active {
   transform: rotate(45deg) translateY(-5px);
 }
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
