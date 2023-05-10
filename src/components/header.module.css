@@ -18,6 +18,10 @@
   transition: height 250ms ease-in-out;
 }
 
+.nav {
+  display: none;
+}
+
 .header--active {
   height: 130vh;
 }
@@ -44,6 +48,15 @@
 }
 
 .nav-link {
+  cursor: pointer;
+  transition: color 250ms ease;
+}
+
+.nav-link:hover {
+  color: var(--color-secondary-light);
+}
+
+.nav-link-mobile {
   color: var(--color-secondary);
   display: block;
   cursor: pointer;
@@ -64,4 +77,21 @@
   transition: opacity 250ms ease-in-out;
 
   opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    color: var(--color-secondary);
+    width: 80%;
+    display: block;
+  }
+
+  .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    height: 100%;
+    font-size: 1.6rem;
+  }
 }

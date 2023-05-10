@@ -35,7 +35,7 @@ const Header: React.FC = () => {
           <img src={logoImg} alt="Asina Sunshine Health Spa Logo" />
         </figure>
 
-        {/* <nav className={styles.nav}>
+        <nav className={styles.nav}>
           <ul className={styles['nav-list']}>
             <li>
               <Link
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
               </Link>
             </li>
           </ul>
-        </nav> */}
+        </nav>
 
         <MenuIcon
           onOpenMenu={openMenu}
@@ -97,7 +97,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 to="services"
-                className={styles['nav-link']}
+                className={styles['nav-link-mobile']}
                 smooth="true"
                 offset={-175}
                 onClick={closeMenu}
@@ -108,7 +108,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 to="book"
-                className={styles['nav-link']}
+                className={styles['nav-link-mobile']}
                 smooth="true"
                 offset={-175}
                 onClick={closeMenu}
@@ -119,7 +119,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 to="hours"
-                className={styles['nav-link']}
+                className={styles['nav-link-mobile']}
                 smooth="true"
                 offset={-175}
                 onClick={closeMenu}
@@ -130,7 +130,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 to="location"
-                className={styles['nav-link']}
+                className={styles['nav-link-mobile']}
                 smooth="true"
                 offset={-175}
                 onClick={closeMenu}
