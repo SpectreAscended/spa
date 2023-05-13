@@ -1,0 +1,31 @@
+.nav {
+  display: none;
+}
+
+.nav-link {
+  cursor: pointer;
+  transform: scale(1);
+  transition: color 250ms, transform 250ms ease;
+}
+
+.nav-link:hover {
+  color: var(--color-secondary-light);
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    color: var(--color-secondary);
+    width: 80%;
+    display: block;
+  }
+
+  .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    height: 100%;
+    font-size: 1.6rem;
+  }
+}
